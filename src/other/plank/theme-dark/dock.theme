@@ -29,10 +29,10 @@ InnerStrokeColor=210;;210;;210;;0
 
 [PlankDockTheme]
 #The padding on the left/right dock edges, in tenths of a percent of IconSize.
-HorizPadding=0
+HorizPadding=1
 
 #The padding on the top dock edge, in tenths of a percent of IconSize.
-TopPadding=0.5
+TopPadding=1
 
 #The padding on the bottom dock edge, in tenths of a percent of IconSize.
 BottomPadding=1
