@@ -2,9 +2,9 @@ $dash_background_color: if($variant == 'light', rgba($panel_bg, $panel_opacity),
 $dash_placeholder_size: 32px;
 $dash_padding: $base_padding + 4px; // 10px/8px
 $dash_spacing: $base_padding / 6; //  /4
-$dash_bottom_margin: $base_margin * 4;
-// $dash_border_radius: $dash_padding * 1.5 + 12px;
-$dash_border_radius: $dash_padding;
+$dash_bottom_margin: 0;
+$dash_border_radius: $dash_padding * 1.5;
+// $dash_border_radius: $dash_padding;
 
 #dash {
   margin-top: $base_spacing * 2;
