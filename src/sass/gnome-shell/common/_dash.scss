@@ -20,7 +20,7 @@ $dash_placeholder_size: 32px;
   box-shadow: none;
   border: none;
   text-align: center;
-  -y-offset: $base_margin * 3; // distance from the dash edge
+  -y-offset: 0; // distance from the dash edge
   -x-offset: 8px;
   @include font(body-1);
 }
