@@ -1,13 +1,13 @@
 
-$dash_background_color: if($variant == 'light', rgba($panel_bg, $panel_opacity), rgba($panel_bg, $panel_opacity + 0.1));
+$dash_background_color: rgba(255, 255, 255, 1);
 $dash_placeholder_size: 32px;
-$dash_padding: $base_padding + 4px; // 10px
-$dash_spacing: round($base_padding / 6);
-$dash_bottom_margin: $base_margin * 4;
-$dash_border_radius: $dash_radius;
+$dash_padding: 5px; // 10px
+$dash_spacing: round($base_padding / 10);
+$dash_bottom_margin: 0px;
+$dash_border_radius: 20px;
 
 // Stock
-$dock_side_margin: $dash_bottom_margin / 4;
+$dock_side_margin: 0;
 $dock_fixed_inner_margin: $dock_side_margin;
 
 // Adapted to $dock_bottom_margin
@@ -35,8 +35,6 @@ $osd_fg_color: #eeeeec;
         #dash {
             margin: 0;
             padding: 0;
-            padding-#{$side}: $dash_padding;
-            padding-#{opposite($side)}: $dash_padding;
 
             .dash-background {
                 margin: 0;
@@ -206,12 +204,12 @@ $osd_fg_color: #eeeeec;
 
 #dashtodockContainer.top.shrink #dash .dash-background {
     margin-top: 4px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 #dashtodockContainer.straight-corner #dash .dash-background,
 #dashtodockContainer.shrink.straight-corner #dash .dash-background {
-    border-radius: 0px;
+    border-radius: 20px;
 }
 
 /* Scrollview style */
@@ -241,12 +239,13 @@ $osd_fg_color: #eeeeec;
 #dashtodockContainer.running-dots .app-well-app.focused .overview-icon,
 #dashtodockContainer.dashtodock .app-well-app.focused .overview-icon {
     // background-color: rgba(238, 238, 236, 0.2);
-    background-color: transparent;
+    background-color: none;
 }
 
 #dashtodockContainer.dashtodock #dash .dash-background {
     // background: #2e3436;
-    background: #525252;
+    background-color: rgba(224, 224, 224, 0.233);
+    opacity: 0.1;
 }
 
 #dashtodockContainer.dashtodock .progress-bar {
