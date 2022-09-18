@@ -1,9 +1,9 @@
 
 $dash_background_color: rgba(255, 255, 255, 1);
 $dash_placeholder_size: 32px;
-$dash_padding: 5px;
-$dash_spacing: round($base_padding / 10);
-$dash_bottom_margin: 0px;
+$dash_padding: 4px;
+$dash_spacing: 0;
+$dash_bottom_margin: 10px;
 $dash_border_radius: 20px;
 
 // Stock
@@ -13,7 +13,7 @@ $dock_fixed_inner_margin: $dock_side_margin;
 // Adapted to $dock_bottom_margin
 
 @function shrink($val) {
-    @return round($val / 4);
+    @return round($val / 6);
 }
 
 @function opposite($val) {
@@ -257,7 +257,7 @@ $osd_fg_color: #eeeeec;
 
 #dashtodockContainer.top #dash .placeholder,
 #dashtodockContainer.bottom #dash .placeholder {
-    width: 32px;
+    width: 28px;
     height: 1px;
 }
 
@@ -305,7 +305,7 @@ $osd_fg_color: #eeeeec;
 }
 
 .dashtodock-app-well-preview-menu-item {
-    padding: 1em 1em 0.5em 1em;
+    padding: 0;
 }
 
 #dashtodockContainer .metro .overview-icon {
@@ -320,7 +320,7 @@ $osd_fg_color: #eeeeec;
 #dashtodockContainer.top .metro.running4.focused {
     background-image: url("./media/highlight_stacked_bg.svg");
     background-position: 0px 0px;
-    background-size: contain;
+    // background-size: contain;
 }
 
 #dashtodockContainer.left .metro.running2.focused,
@@ -331,5 +331,5 @@ $osd_fg_color: #eeeeec;
 #dashtodockContainer.right .metro.running4.focused {
     background-image: url("./media/highlight_stacked_bg_h.svg");
     background-position: 0px 0px;
-    background-size: contain;
+    // background-size: contain;
 }
